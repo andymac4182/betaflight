@@ -63,6 +63,7 @@
 #define CMS
 #define USE_DASHBOARD
 #define USE_MSP_DISPLAYPORT
+#define TELEMETRY_CRSF
 #define TELEMETRY_JETIEXBUS
 #define TELEMETRY_MAVLINK
 #else
