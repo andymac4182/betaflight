@@ -79,6 +79,7 @@
 #define RSSI_ADC_PIN            PA1
 #define VBAT_ADC_PIN            PA2
 
+#define USE_DSHOT
 #define LED_STRIP
 
 #define ENABLE_BLACKBOX_LOGGING_ON_SPIFLASH_BY_DEFAULT

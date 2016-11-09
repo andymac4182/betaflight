@@ -24,10 +24,10 @@
 
 const timerHardware_t timerHardware[USABLE_TIMER_CHANNEL_COUNT] = {
     { TIM2,  IO_TAG(PA15), TIM_Channel_1, TIM_USE_PPM,   0, GPIO_AF_1, NULL, 0}, // PPM/SERIAL RX
-    { TIM3,  IO_TAG(PB4),  TIM_Channel_1, TIM_USE_MOTOR, 0, GPIO_AF_2, NULL, 0}, // PWM1
-    { TIM3,  IO_TAG(PB5),  TIM_Channel_2, TIM_USE_MOTOR, 0, GPIO_AF_2, NULL, 0}, // PWM2
-    { TIM3,  IO_TAG(PB1),  TIM_Channel_4, TIM_USE_MOTOR, 0, GPIO_AF_2, NULL, 0}, // PWM3
-    { TIM3,  IO_TAG(PB0),  TIM_Channel_3, TIM_USE_MOTOR, 0, GPIO_AF_2, NULL, 0}, // PWM4
+    { TIM3,  IO_TAG(PB4),  TIM_Channel_1, TIM_USE_MOTOR, 0, GPIO_AF_2, DMA1_Channel3, 0}, // PWM1
+    { TIM3,  IO_TAG(PB5),  TIM_Channel_2, TIM_USE_MOTOR, 0, GPIO_AF_2, DMA1_Channel7, 0}, // PWM2
+    { TIM3,  IO_TAG(PB1),  TIM_Channel_4, TIM_USE_MOTOR, 0, GPIO_AF_2, DMA1_Channel1, 0}, // PWM3
+    { TIM3,  IO_TAG(PB0),  TIM_Channel_3, TIM_USE_MOTOR, 0, GPIO_AF_2, DMA1_Channel4, 0}, // PWM4
     { TIM16, IO_TAG(PB8),  TIM_Channel_1, TIM_USE_MOTOR, 1, GPIO_AF_1, NULL, 0}, // PWM5
     { TIM17, IO_TAG(PB9),  TIM_Channel_1, TIM_USE_MOTOR, 1, GPIO_AF_1, NULL, 0}, // PWM6
     { TIM1,  IO_TAG(PA8),  TIM_Channel_1, TIM_USE_LED,   1, GPIO_AF_6, DMA1_Channel2, DMA1_CH2_HANDLER}, // LED_STRIP
